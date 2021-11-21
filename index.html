@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="body" style="background-color: black;">
+  <header class="backImage">
+    <ul class="nav" id="myTab" role="tablist">
+      <li class="nav-item opacity-75">
+        <a class="nav-link active bg-dark btn btn-dark m-1" style="color:#f3d52c;  border-color:#f3d52c;" id="home-tab" data-toggle="tab" href="#" role="tab" aria-controls="home" aria-selected="true">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link opacity-75 m-1" id="profile-tab" style="color:#f3d52c;" data-toggle="tab" href="#" role="tab" aria-controls="profile" aria-selected="false">Rechercher</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link opacity-0" id="contact-tab" style="color:#f3d52c;" data-toggle="tab" href="#" role="tab" aria-controls="contact" aria-selected="false">##################</a>
+      </li>
+      <li>
+        <img id="logo" class="image opacity-25 img" src="StarWarsLogo.png" alt=" ">
+      </li>
+      
+    </ul>
+   
+  </header>
+  
+  <main class="container text-center" style="width:100%;color:#f3d52c;">
+
+    <h1 class="text-info">Choisissez votre catégorie préférée:</h1>
+
+    <div class="d-flex justify-content-center p-2 m-2 resp">
+
+      <article class="container bg-dark m-1" style=" width:250px;">
+        <h2 style="color: #f3d52c;">Personnages</h2>
+        <img style="width: 100%;" src="people.jpg" alt="">
+        <h5 class="m-2 p-2">Pour voir la liste des personnages, cliquez ici:</h5>
+        <a href="#" class="btn btn-dark text-info border border-info m-2 p-2" >Consulter</a>
+        
+      </article>
+
+      <article class="container bg-dark m-1 responsive" style=" width:250px;">
+        <h2 style="color: #f3d52c;">Planètes</h2>
+        <img style="width: 100%;" src="planets.jpg" alt="">
+        <h5 class="m-2 p-2">Pour voir la liste des planètes, cliquez ici:</h5>
+        <a href="#" class="btn btn-dark text-info border border-info m-2 p-2" >Consulter</a>
+      </article>
+
+      <article class="container bg-dark m-1 responsive" style=" width:250px;">
+        <h2 style="color: #f3d52c;">Véhicules</h2>
+        <img style="width: 100%;" src="starShip.jpg" alt="">
+        <h5 class="m-2 p-2">Pour voir la liste des véhicules, cliquez ici:</h5>
+        <a href="#" class="btn btn-dark text-info border border-info m-2 p-2" style="color:#f3d52c;  border-color:#f3d52c;" >Consulter</a>
+      </article>
+
+    </div>
+
+    <h2 class="p-3 m-3">Que la force soit avec vous...</h2>
+
+
+  </main>
+
+  <footer>
+    <nav class="d-flex justify-content-center navbar flex-end backImage">
+      <img style="width: 30%;" id="logo" class="image opacity-25 img" src="StarWarsLogo.png" alt=" ">
+
+    </nav>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/swapi_people.js"></script>
+  <script src="js/swapi_planet.js"></script> 
+  <script src="js/swapi_starship.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

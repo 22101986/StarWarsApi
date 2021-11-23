@@ -3,7 +3,10 @@ let starshipHttpRequest = new XMLHttpRequest();
         if (starshipHttpRequest.readyState === XMLHttpRequest.DONE) {
             if (starshipHttpRequest.status === 200) {
                 let response = JSON.parse(starshipHttpRequest.responseText);
-                console.log(response);
+                let ul = document.getElementById("starship");
+                    for(starship of response.results) {
+                        ul.innerHTML += `<li class="text-light">Name: ${starship.name}</li>`
+                    }
             }
         }
     }

@@ -3,7 +3,10 @@ let planetHttpRequest = new XMLHttpRequest();
         if (planetHttpRequest.readyState === XMLHttpRequest.DONE) {
             if (planetHttpRequest.status === 200) {
                 let response = JSON.parse(planetHttpRequest.responseText);
-                console.log(response);
+                let ul = document.getElementById("planet")
+                    for(planet of response.results) {
+                        ul.innerHTML += `<li class="list-group-item list-group-item-warning">Planet: ${planet.name}</li>`
+                    }
             }
         }
     }
